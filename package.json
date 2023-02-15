@@ -1,13 +1,17 @@
 {
   "name": "@beercode/react-starter",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "React Starter",
   "bin": "./bin/cli.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "pre-commit": "set NODE_ENV=production&& npx --no-install lint-staged",
     "publish-lib": "npm publish --access public",
+    "publish-yarn": "yarn publish",
     "postinstall": "npx husky install"
   },
   "dependencies": {
