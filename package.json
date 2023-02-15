@@ -11,7 +11,6 @@
     "build": "react-scripts build",
     "pre-commit": "set NODE_ENV=production&& npx --no-install lint-staged",
     "publish-lib": "npm publish --access public",
-    "publish-yarn": "yarn publish",
     "postinstall": "npx husky install"
   },
   "dependencies": {
