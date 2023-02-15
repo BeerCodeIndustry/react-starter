@@ -2,19 +2,23 @@
   "name": "@beercode/react-starter",
   "version": "0.1.1",
   "description": "React Starter",
+  "bin": "./bin/cli.js",
   "scripts": {
-    "deps": "yarn && yarn prepare-husky",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "prepare-husky": "husky install",
     "pre-commit": "set NODE_ENV=production&& npx --no-install lint-staged",
-    "publish-lib": "npm publish --access public"
+    "publish-lib": "npm publish --access public",
+    "postinstall": "npx husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BeerCodeIndustry/react-starter"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.0.0",
