@@ -14,7 +14,7 @@ const runCmd = cmd => {
   return true
 }
 
-const repoName = process.argv[2]
+const repoName = process.argv[2] ?? 'react-app'
 const gitCheckoutCmd = `git clone --depth 1 https://github.com/BeerCodeIndustry/react-starter ${repoName}`
 const installDepsCmd = `cd ${repoName} && yarn install`
 

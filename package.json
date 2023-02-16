@@ -1,5 +1,5 @@
 {
-  "name": "create-br-react",
+  "name": "create-react-beer",
   "version": "0.1.4",
   "description": "React Starter",
   "bin": "./bin/cli.js",
