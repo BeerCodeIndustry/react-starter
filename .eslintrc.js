@@ -51,8 +51,10 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/member-ordering': 'error',
     '@typescript-eslint/no-non-null-assertion': 'off',
-    '@typescript-eslint/no-unused-expressions': 'error',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-expressions':
+      process.env.NODE_ENV === 'production' ? 'error' : 'warn',
+    '@typescript-eslint/no-unused-vars':
+      process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/prefer-nullish-coalescing': 'error',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
