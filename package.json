@@ -1,6 +1,6 @@
 {
   "name": "create-react-beer",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "React Starter",
   "bin": "./bin/cli.js",
   "publishConfig": {
