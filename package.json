@@ -3,6 +3,7 @@
   "version": "0.2.1",
   "description": "React Starter",
   "bin": "./bin/cli.js",
+  "private": false,
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -11,7 +12,9 @@
     "build": "react-scripts build",
     "pre-commit": "set NODE_ENV=production&& npx --no-install lint-staged",
     "publish-lib": "npm publish --access public",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -43,6 +46,7 @@
     "eslint-plugin-react-redux": "^4.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
+    "pinst": "^3.0.0",
     "prettier": "^2.8.4"
   },
   "eslintConfig": {
