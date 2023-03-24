@@ -1,6 +1,6 @@
 {
   "name": "create-react-beer",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "React Starter",
   "bin": "./bin/cli.js",
   "private": false,
